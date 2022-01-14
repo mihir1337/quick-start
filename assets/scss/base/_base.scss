@@ -1,0 +1,135 @@
+@import "./_reset";
+
+/* global css start */
+.nice-select {
+	background-color: transparent;
+	height: 40px !important;
+	line-height: 40px !important;
+	min-height: 40px !important;
+	padding: 0 30px;
+	span {
+		color: $black;
+	}
+	.list {
+		li {
+			margin-right: 0 !important;
+		}
+		.option {
+			color: $black;
+			&.selected,
+			&:hover {
+				border: none !important;
+			}
+		}
+	}
+}
+
+/* global css end */
+.bg_img {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.dark-bg {
+	background-color: $bg-dark;
+}
+
+.grey-bg {
+	background: $grey;
+}
+
+.white {
+	color: $white;
+}
+
+.f-right {
+	float: right;
+}
+
+
+.border-effect {
+	a,
+	span.border-effect {
+		position: relative;
+		display: inline;
+		background-image: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(currentColor),
+			to(currentColor)
+		);
+		background-image: -webkit-linear-gradient(
+			left,
+			currentColor 0%,
+			currentColor 100%
+		);
+		background-image: -o-linear-gradient(
+			left,
+			currentColor 0%,
+			currentColor 100%
+		);
+		background-image: linear-gradient(
+			to right,
+			currentColor 0%,
+			currentColor 100%
+		);
+		background-size: 0px 2px;
+		background-position: 0px 95%;
+		-webkit-transition: background-size 0.25s
+			cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+		-o-transition: background-size 0.25s
+			cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+		transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+			0s;
+		padding: 0.7% 0px;
+		background-repeat: no-repeat;
+		color: inherit;
+		&:hover {
+			background-size: 100% 2px;
+		}
+	}
+}
+
+span.border-effect {
+	position: relative;
+	display: inline;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(currentColor),
+		to(currentColor)
+	);
+	background-image: -webkit-linear-gradient(
+		left,
+		currentColor 0%,
+		currentColor 100%
+	);
+	background-image: -o-linear-gradient(
+		left,
+		currentColor 0%,
+		currentColor 100%
+	);
+	background-image: linear-gradient(
+		to right,
+		currentColor 0%,
+		currentColor 100%
+	);
+	background-size: 0px 2px;
+	background-position: 0px 95%;
+	-webkit-transition: background-size 0.25s
+		cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+	-o-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+		0s;
+	transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+	padding: 0.7% 0px;
+	background-repeat: no-repeat;
+	color: inherit;
+	&:hover {
+		background-size: 100% 2px;
+	}
+}
